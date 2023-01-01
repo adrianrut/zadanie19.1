@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Rejestracja</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+          crossorigin="anonymous">
+
+
+</head>
+<body>
+<div style="margin: 50px">
+    <h1>
+        Rejestracja
+    </h1>
+</div>
+
+<div class="main container">
+
+    <form class="row g-3">
+        <div class="col-md-4">
+            <label for="validationDefault01" class="form-label">Imię</label>
+            <input type="text" class="form-control" id="validationDefault01" value="" required>
+        </div>
+        <div class="col-md-4">
+            <label for="validationDefault02" class="form-label">Nazwisko</label>
+            <input type="text" class="form-control" id="validationDefault02" value="" required>
+        </div>
+
+        <div class="col-md-6">
+            <label for="validationDefault03" class="form-label">Miasto</label>
+            <input type="text" class="form-control" id="validationDefault03" required>
+        </div>
+        <div class="col-md-3">
+            <label for="validationDefault04" class="form-label">Województwo</label>
+            <select class="form-select" id="validationDefault04" required>
+                <option selected disabled value="">Wybierz...</option>
+                <option>...</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label for="validationDefault05" class="form-label">Kod pocztowy</label>
+            <input type="text" class="form-control" id="validationDefault05" required>
+        </div>
+
+    </form><br>
+
+    <form>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Adres email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Hasło</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+            <div id="emailHelp" class="form-text">Min. 8 znaków</div>
+        </div>
+
+    </form>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+            Akceptuję <a href="https://pl.wikipedia.org/wiki/Regulamin" target="_blank">regulamin</a>
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">
+            Wyrażam zgodę na otrzymywanie informacji marketingowych
+        </label>
+        <br>
+        <button type="submit" class="btn btn-primary">Rejestruj</button>
+    </div>
+</div>
+
+
+</body>
+</html>
